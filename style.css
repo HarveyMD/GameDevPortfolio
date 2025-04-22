@@ -1,0 +1,193 @@
+
+body{
+    background-color: #333333; /* Background Colour */
+    color: #ffffff; /* Text Colour */
+    font-family: 'Playfair Display', serif; /* Font */
+    margin: 0;
+}
+
+header {
+    
+    background-color: #333333; /* Background Colour */
+    color: #ffffff;/* Text Colour */
+    margin: 0px;
+    height: 0;
+    padding: 40px;
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    position: relative; /* Required for absolute positioning */
+}
+
+main{
+    border-color: palevioletred;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: linear-gradient(#141e30, #243b55);
+    /*#141e30 → #243b55*/
+}
+
+h1{
+    text-align: center;
+}
+
+.title-txt{
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 34px;
+}
+
+.main-txt {
+    text-align: center;
+    margin: 0 auto;
+    color: #ffffff;
+    width: 100%; /* Adjust the width as needed */
+    font-weight: normal;
+    font-size: 17px;
+}
+
+.navbar {
+    margin-left: 20px;
+    margin-right: 20px;
+    position: sticky;
+    top: 0;
+    background-color: hsl(0, 0%, 25%);
+    z-index: 1000; /* Ensure it stays on top */
+}
+
+.navbar ul{
+    list-style-type: none;
+    background-color: hsl(0, 0%, 25%);
+    padding: 0%;
+    margin: 0px;
+    overflow: hidden;
+}
+
+.navbar li{
+    float: left;
+}
+
+.navbar a{
+    
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+
+.navbar a:hover{
+    background-color: hsl(0, 0%, 10%);
+}
+
+.nav-image {
+    width: 24px; /* Adjust the size as needed */
+    height: 24PX; /* Adjust the size as needed */
+    vertical-align: middle;
+}
+
+/* Global box-sizing rule */
+* {
+    box-sizing: border-box;
+}
+
+/* Image container styling */
+#image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px; /* Adjusts the gap between images */
+}
+
+/* Container for the image and overlay */
+.container {
+    position: relative;
+    width: 30%;
+    max-width: 300px;
+    margin-bottom: 10px; /* Adjusts the bottom margin of the containers */
+}
+
+/* Make the image responsive */
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Overlay effect */
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    transition: .5s ease;
+    opacity: 0;
+    font-size: 16px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Show overlay on hover */
+.container:hover .overlay {
+    opacity: 1;
+}
+
+/* Media query for tablets and smaller screens */
+@media (max-width: 768px) {
+    #image-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px; /* Adjusts the gap between images for smaller screens */
+    }
+
+    .container {
+        width: 80%;
+        max-width: none;
+    }
+
+    .overlay {
+        font-size: 4vw;
+        padding: 4vw;
+    }
+}
+
+/* Media query for phones */
+@media (max-width: 480px) {
+    .overlay {
+        font-size: 5vw;
+        padding: 5vw;
+    }
+}
+
+/* Media query for desktops and larger screens */
+@media (min-width: 1024px) {
+    #image-container {
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 10px; /* Adjusts the gap between images */
+    }
+
+    .container {
+        width: 40%; /* Increase the width to make the images larger */
+        max-width: 500px; /* Increase the max-width as well */
+        margin-bottom: 10px; /* Adjusts the bottom margin of the containers */
+    }
+
+    .overlay {
+        font-size: 16px;
+        padding: 20px;
+    }
+}
+
+/* Metta Mech*/
+.center-video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+

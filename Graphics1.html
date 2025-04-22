@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <title>Harvey Morris-Daws</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Photo/Grad_Photo.png" type="image/x-icon">
+</head>
+<body>
+
+  <header>
+
+    <h1>Games Programmer</h1>
+
+</header>
+  
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">About</a></li>
+      <li><a href="Projects.html">Projects</a></li>
+      <li>
+        <a href="https://www.linkedin.com/in/harveymorris-daws/" target="_blank">
+          <img src="Photo/LinkedinLogo.png" alt="LinkedIn" class="nav-image" title="LinkedIn">
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+<main>
+    <div style="padding:20px;margin-top:20px;margin:bottom 20px;background-color: linear-gradient(180deg, #233A4E, #6B5480);height:auto;"></div>
+
+    <div class="title-txt">
+      Graphics 1
+    </div>
+
+    <div class="main-txt">
+
+      This was a solo project I worked on during my second year at university, 
+      where I built a simple 3D graphics engine from scratch in C++. I used custom vector and matrix math to handle all the transformations and rendering
+
+      <p>It started off as a 2D rotating square, and over time I expanded it into a 3D cube that could rotate around the Y-axis. 
+      Eventually, I added a basic model loader so I could import pre-made 3D models and apply transformations like rotation and translation.
+       I also wrote a scaling function, but I ended up leaving that out of the final version I presented.</p>
+
+      <p>This project really helped me get a solid grasp of how 3D graphics work under the hood and gave me a much deeper appreciation for linear algebra and low-level rendering.</p>
+
+
+
+      
+      <div id="image-container">
+
+            <img src="Photo/Graphics1.gif" alt="Image 1" class="center-image" width="640" height="360" title="Final Result">
+
+
+    </div>
+
+
+
+<!--1-->
+<div id="image-container">
+
+  <div class="container">
+      <video control autoplay muted loop class="image" controls>
+    <source src="Video/Graphics1Square.mp4" alt="3D Modelling Render" class="image">
+    </video>
+    <div class="overlay">
+      <div class="text">Early Development with Shape Rendering</div>
+      <div class="text"></div>
+    </div>
+</div>
+<!--2-->
+<div class="container">
+<video control autoplay muted loop class="image" controls>
+  <source src="Video/Graphics1Cube.mp4" alt="3D Modelling Render" class="image">
+  </video>
+  <div class="overlay">
+    <div class="text">Cube Rendering (with math errors)</div>
+    <div class="text"></div>
+  </div>
+</div>
+
+<!--3-->
+<div class="container">
+  <video control autoplay muted loop class="image" controls>
+    <source src="Video/Grapgics1_Heli.mp4" alt="3D Modelling Render" class="image">
+    </video>
+    <div class="overlay">
+      <div class="text">3D Model Loader Working</div>
+      <div class="text"></div>
+    </div>
+  </div>
+
+  </main>
+
+</body>
+</html>
