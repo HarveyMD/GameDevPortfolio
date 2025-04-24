@@ -1,2 +1,2 @@
-# GameDevPortfolio
-Harvey Morris-Daws Game Development Portfolio
+# Games Programmer / UI Programmer Portfolio 
+
