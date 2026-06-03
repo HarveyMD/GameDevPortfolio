@@ -2,7 +2,7 @@
 
 A personal portfolio website showcasing game development projects, built with plain HTML and CSS.
 
-🌐 **Live site:** <!-- TODO: Add your GitHub Pages / hosting URL here -->
+🌐 **Live site:** https://harveymd.github.io/GameDevPortfolio/
 
 ---
 
@@ -45,9 +45,9 @@ Recent Computer Games Programming graduate from the University of Derby. Special
 Clone the repo and open `index.html` in a browser — no build step required.
 
 ```bash
-git clone https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME.git
-cd YOUR_REPO_NAME
-open index.html
+git https://github.com/HarveyMD/GameDevPortfolio.git
+cd GameDevPortfolio
+start index.html
 ```
 
 ---
