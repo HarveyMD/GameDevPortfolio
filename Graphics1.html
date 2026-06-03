@@ -4,96 +4,120 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Graphics 1 — a solo C++ 3D graphics engine built from scratch using custom vector/matrix math, supporting 2D/3D rendering, model loading, and rotation.">
+    <meta property="og:title" content="Graphics 1 | Harvey Morris-Daws">
+    <meta property="og:description" content="A solo C++ 3D graphics engine built from scratch with custom math, supporting model loading and rotation.">
+    <meta property="og:image" content="Photo/Graphics1.gif">
+    <meta property="og:type" content="website">
+
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-    <title>Harvey Morris-Daws</title>
+    <title>Graphics 1 | Harvey Morris-Daws</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="Photo/Grad_Photo.png" type="image/x-icon">
 </head>
 <body>
 
   <header>
-
     <h1>Games Programmer</h1>
+  </header>
 
-</header>
-  
   <nav class="navbar">
     <ul>
       <li><a href="index.html">About</a></li>
       <li><a href="Projects.html">Projects</a></li>
       <li>
-        <a href="https://www.linkedin.com/in/harveymorris-daws/" target="_blank">
-          <img src="Photo/LinkedinLogo.png" alt="LinkedIn" class="nav-image" title="LinkedIn">
+        <a href="https://www.linkedin.com/in/harveymorris-daws/" target="_blank" title="LinkedIn">
+          <img src="Photo/LinkedinLogo.png" alt="LinkedIn" class="nav-image">
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/HarveyMD" target="_blank" title="GitHub">
+          <svg class="nav-icon-svg" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" aria-label="GitHub">
+            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38
+              0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01
+              1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95
+              0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68
+              0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15
+              0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013
+              8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+          </svg>
         </a>
       </li>
     </ul>
   </nav>
 
-<main>
-    <div style="padding:20px;margin-top:20px;margin:bottom 20px;background-color: linear-gradient(180deg, #233A4E, #6B5480);height:auto;"></div>
+  <main>
+    <div class="page-header-bar"></div>
 
-    <div class="title-txt">
-      Graphics 1
-    </div>
+    <div class="title-txt">Graphics 1</div>
 
     <div class="main-txt">
+      This was a solo project I worked on during my second year at university,
+      where I built a simple 3D graphics engine from scratch in C++. I used custom vector and matrix math to handle all the transformations and rendering.
 
-      This was a solo project I worked on during my second year at university, 
-      where I built a simple 3D graphics engine from scratch in C++. I used custom vector and matrix math to handle all the transformations and rendering
-
-      <p>It started off as a 2D rotating square, and over time I expanded it into a 3D cube that could rotate around the Y-axis. 
+      <p>It started off as a 2D rotating square, and over time I expanded it into a 3D cube that could rotate around the Y-axis.
       Eventually, I added a basic model loader so I could import pre-made 3D models and apply transformations like rotation and translation.
-       I also wrote a scaling function, but I ended up leaving that out of the final version I presented.</p>
+      I also wrote a scaling function, but I ended up leaving that out of the final version I presented.</p>
 
       <p>This project really helped me get a solid grasp of how 3D graphics work under the hood and gave me a much deeper appreciation for linear algebra and low-level rendering.</p>
 
-
-
-      
-      <div id="image-container">
-
-            <img src="Photo/Graphics1.gif" alt="Image 1" class="responsive-image center-image" width="640" height="360" title="Final Result">
-
-
+      <div class="image-container">
+        <img src="Photo/Graphics1.gif" alt="Final Result" class="responsive-image center-image" width="640" height="360" title="Final Result">
+      </div>
     </div>
 
     <h1>Development Highlights</h1>
 
-<!--1-->
-<div id="image-container">
+    <!-- Fixed: all three video elements had invalid 'control' attribute (no 's') alongside 'controls' -->
+    <div class="image-container">
 
-  <div class="container">
-      <video control autoplay muted loop class="image" controls>
-    <source src="Video/Graphics1Square.mp4" alt="3D Modelling Render" class="image">
-    </video>
-    <div class="overlay">
-      <div class="text">Early Development with Shape Rendering</div>
-      <div class="text"></div>
-    </div>
-</div>
-<!--2-->
-<div class="container">
-<video control autoplay muted loop class="image" controls>
-  <source src="Video/Graphics1Cube.mp4" alt="3D Modelling Render" class="image">
-  </video>
-  <div class="overlay">
-    <div class="text">Cube Rendering (with math errors)</div>
-    <div class="text"></div>
-  </div>
-</div>
+      <!-- 1 -->
+      <div class="container">
+        <video autoplay muted loop controls class="image">
+          <source src="Video/Graphics1Square.mp4" type="video/mp4">
+        </video>
+        <div class="overlay"><div class="text">Early Development with Shape Rendering</div></div>
+      </div>
 
-<!--3-->
-<div class="container">
-  <video control autoplay muted loop class="image" controls>
-    <source src="Video/Grapgics1_Heli.mp4" alt="3D Modelling Render" class="image">
-    </video>
-    <div class="overlay">
-      <div class="text">3D Model Loader</div>
-      <div class="text"></div>
+      <!-- 2 -->
+      <div class="container">
+        <video autoplay muted loop controls class="image">
+          <source src="Video/Graphics1Cube.mp4" type="video/mp4">
+        </video>
+        <div class="overlay"><div class="text">Cube Rendering (with math errors)</div></div>
+      </div>
+
+      <!-- 3 -->
+      <div class="container">
+        <video autoplay muted loop controls class="image">
+          <source src="Video/Grapgics1_Heli.mp4" type="video/mp4">
+        </video>
+        <div class="overlay"><div class="text">3D Model Loader</div></div>
+      </div>
+
     </div>
-  </div>
 
   </main>
+
+  <footer class="site-footer">
+    <p>
+      Harvey Morris-Daws &copy; 2025
+      &nbsp;|&nbsp;
+      <a href="https://www.linkedin.com/in/harveymorris-daws/" target="_blank">LinkedIn</a>
+      &nbsp;|&nbsp;
+      <a href="https://github.com/HarveyMD" target="_blank">GitHub</a>
+    </p>
+  </footer>
+
+  <script>
+    (function() {
+      const page = window.location.pathname.split('/').pop() || 'index.html';
+      document.querySelectorAll('.navbar a').forEach(function(link) {
+        if (link.getAttribute('href') === page) link.classList.add('active');
+      });
+    })();
+  </script>
 
 </body>
 </html>

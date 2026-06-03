@@ -1,22 +1,21 @@
 
 body{
-    background-color: #333333; /* Background Colour */
-    color: #ffffff; /* Text Colour */
-    font-family: 'Playfair Display', serif; /* Font */
+    background-color: #333333;
+    color: #ffffff;
+    font-family: 'Playfair Display', serif;
     margin: 0;
 }
 
 header {
-    
-    background-color: #333333; /* Background Colour */
-    color: #ffffff;/* Text Colour */
+    background-color: #333333;
+    color: #ffffff;
     margin: 0px;
     height: 0;
     padding: 40px;
     display: flex;
-    justify-content: center; /* Center items horizontally */
-    align-items: center; /* Center items vertically */
-    position: relative; /* Required for absolute positioning */
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
 main{
@@ -24,36 +23,53 @@ main{
     margin-left: 20px;
     margin-right: 20px;
     background-color: linear-gradient(#141e30, #243b55);
-    /*#141e30 → #243b55*/
 }
 
 h1{
     text-align: center;
 }
 
+/* =====================
+   Page header gradient bar (fixes background-color + margin:bottom bugs)
+   ===================== */
+.page-header-bar {
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: linear-gradient(180deg, #233A4E, #6B5480);
+    height: auto;
+}
+
+/* =====================
+   Typography
+   ===================== */
 .title-txt{
     text-align: center;
     color: #ffffff;
     font-weight: bold;
     font-size: 34px;
+    margin-top: 24px;
 }
 
 .main-txt {
     text-align: center;
     margin: 0 auto;
     color: #ffffff;
-    width: 100%; /* Adjust the width as needed */
+    width: 100%;
     font-weight: normal;
     font-size: 17px;
 }
 
+/* =====================
+   Navbar
+   ===================== */
 .navbar {
     margin-left: 20px;
     margin-right: 20px;
     position: sticky;
     top: 0;
     background-color: hsl(0, 0%, 25%);
-    z-index: 1000; /* Ensure it stays on top */
+    z-index: 1000;
 }
 
 .navbar ul{
@@ -69,7 +85,6 @@ h1{
 }
 
 .navbar a{
-    
     color: white;
     text-decoration: none;
     padding: 15px;
@@ -81,43 +96,210 @@ h1{
     background-color: hsl(0, 0%, 10%);
 }
 
+/* Active nav state — highlights current page */
+.navbar a.active {
+    background-color: hsl(0, 0%, 15%);
+    border-bottom: 2px solid #a0b4c8;
+}
+
 .nav-image {
-    width: 24px; /* Adjust the size as needed */
-    height: 24PX; /* Adjust the size as needed */
+    width: 24px;
+    height: 24px;
     vertical-align: middle;
 }
 
-/* Global box-sizing rule */
+/* GitHub icon in nav */
+.nav-icon-svg {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    fill: white;
+    transition: opacity 0.2s;
+}
+
+.navbar a:hover .nav-icon-svg {
+    opacity: 0.7;
+}
+
+/* =====================
+   Profile photo (About page)
+   ===================== */
+.profile-photo {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+    margin: 20px auto;
+    border: 3px solid #a0b4c8;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+}
+
+/* =====================
+   Skills grid
+   ===================== */
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 28px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.skill-category {
+    flex: 1 1 180px;
+    text-align: center;
+}
+
+.skill-category h3 {
+    font-size: 15px;
+    color: #a0b4c8;
+    margin-bottom: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+}
+
+.skill-tag {
+    background-color: rgba(255,255,255,0.1);
+    border: 1px solid rgba(160, 180, 200, 0.4);
+    color: #e0e8f0;
+    border-radius: 20px;
+    padding: 5px 14px;
+    font-size: 13px;
+    font-family: 'Playfair Display', serif;
+    white-space: nowrap;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.skill-tag:hover {
+    background-color: rgba(160, 180, 200, 0.2);
+    border-color: #a0b4c8;
+}
+
+/* =====================
+   CTA Buttons (CV download, email)
+   ===================== */
+.cta-buttons {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px auto;
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: #a0b4c8;
+    color: #1a2a38;
+    text-decoration: none;
+    padding: 12px 28px;
+    border-radius: 4px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 15px;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.btn-primary:hover {
+    background-color: #c0cedd;
+    transform: translateY(-1px);
+}
+
+.btn-secondary {
+    display: inline-block;
+    background-color: transparent;
+    color: #a0b4c8;
+    text-decoration: none;
+    padding: 11px 28px;
+    border-radius: 4px;
+    border: 2px solid #a0b4c8;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 15px;
+    transition: background-color 0.2s, color 0.2s, transform 0.1s;
+}
+
+.btn-secondary:hover {
+    background-color: rgba(160, 180, 200, 0.15);
+    transform: translateY(-1px);
+}
+
+/* =====================
+   Contact section
+   ===================== */
+.contact-section {
+    text-align: center;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+/* =====================
+   Footer
+   ===================== */
+.site-footer {
+    background-color: hsl(0, 0%, 20%);
+    color: #aaa;
+    text-align: center;
+    padding: 18px;
+    font-size: 14px;
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.site-footer a {
+    color: #a0b4c8;
+    text-decoration: none;
+    margin: 0 6px;
+}
+
+.site-footer a:hover {
+    text-decoration: underline;
+}
+
+/* =====================
+   Global box-sizing
+   ===================== */
 * {
     box-sizing: border-box;
 }
 
-/* Image container styling */
-#image-container {
+/* =====================
+   Image containers  (class version fixes duplicate-ID bug)
+   ===================== */
+#image-container,
+.image-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     margin-top: 20px;
-    gap: 10px; /* Adjusts the gap between images */
+    gap: 10px;
 }
 
-/* Container for the image and overlay */
 .container {
     position: relative;
     width: 30%;
     max-width: 300px;
-    margin-bottom: 10px; /* Adjusts the bottom margin of the containers */
+    margin-bottom: 10px;
 }
 
-/* Make the image responsive */
 .image {
     display: block;
     width: 100%;
     height: auto;
 }
 
-/* Overlay effect */
 .overlay {
     position: absolute;
     bottom: 0;
@@ -131,17 +313,19 @@ h1{
     text-align: center;
 }
 
-/* Show overlay on hover */
 .container:hover .overlay {
     opacity: 1;
 }
 
-/* Media query for tablets and smaller screens */
+/* =====================
+   Responsive
+   ===================== */
 @media (max-width: 768px) {
-    #image-container {
+    #image-container,
+    .image-container {
         flex-direction: column;
         align-items: center;
-        gap: 20px; /* Adjusts the gap between images for smaller screens */
+        gap: 20px;
     }
 
     .container {
@@ -153,9 +337,13 @@ h1{
         font-size: 4vw;
         padding: 4vw;
     }
+
+    .skills-grid {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
-/* Media query for phones */
 @media (max-width: 480px) {
     .overlay {
         font-size: 5vw;
@@ -163,18 +351,18 @@ h1{
     }
 }
 
-/* Media query for desktops and larger screens */
 @media (min-width: 1024px) {
-    #image-container {
+    #image-container,
+    .image-container {
         flex-direction: row;
         justify-content: space-around;
-        gap: 10px; /* Adjusts the gap between images */
+        gap: 10px;
     }
 
     .container {
-        width: 40%; /* Increase the width to make the images larger */
-        max-width: 500px; /* Increase the max-width as well */
-        margin-bottom: 10px; /* Adjusts the bottom margin of the containers */
+        width: 40%;
+        max-width: 500px;
+        margin-bottom: 10px;
     }
 
     .overlay {
@@ -183,7 +371,7 @@ h1{
     }
 }
 
-/* Metta Mech*/
+/* Centring helpers */
 .center-video {
     display: block;
     margin-left: auto;
@@ -194,5 +382,5 @@ h1{
     max-width: 100%;
     height: auto;
     display: block;
-    margin: 0 auto; /* Center the image horizontally */
+    margin: 0 auto;
 }

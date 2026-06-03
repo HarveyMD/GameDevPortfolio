@@ -4,86 +4,177 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO & Social sharing meta tags -->
+    <meta name="description" content="Harvey Morris-Daws — Games Programmer specialising in Unreal Engine, Unity, UI/UX, and gameplay systems. View my portfolio of game development projects.">
+    <meta property="og:title" content="Harvey Morris-Daws | Games Programmer">
+    <meta property="og:description" content="Games Programmer specialising in Unreal Engine, Unity, UI/UX, and gameplay systems.">
+    <meta property="og:image" content="Photo/Grad_Photo.png">
+    <meta property="og:type" content="website">
+
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-    <title>Harvey Morris-Daws</title>
+    <title>Harvey Morris-Daws | Games Programmer</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="Photo/Grad_Photo.png" type="image/x-icon">
 </head>
 <body>
-  
+
   <header>
     <div>
       <h1>Harvey Morris-Daws</h1>
     </div>
-</header>
+  </header>
 
   <nav class="navbar">
     <ul>
       <li><a href="index.html">About</a></li>
       <li><a href="Projects.html">Projects</a></li>
       <li>
-        <a href="https://www.linkedin.com/in/harveymorris-daws/" target="_blank">
-          <img src="Photo/LinkedinLogo.png" alt="LinkedIn" class="nav-image" title="LinkedIn">
+        <a href="https://www.linkedin.com/in/harveymorris-daws/" target="_blank" title="LinkedIn">
+          <img src="Photo/LinkedinLogo.png" alt="LinkedIn" class="nav-image">
+        </a>
+      </li>
+      <li>
+        <!-- TODO: Replace HarveyMD with your actual GitHub username -->
+        <a href="https://github.com/HarveyMD" target="_blank" title="GitHub">
+          <svg class="nav-icon-svg" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" aria-label="GitHub">
+            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38
+              0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01
+              1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95
+              0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68
+              0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15
+              0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013
+              8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+          </svg>
         </a>
       </li>
     </ul>
   </nav>
 
   <main>
-    <div style="padding:20px;margin-top:20px;margin:bottom 20px;background-color: linear-gradient(180deg, #233A4E, #6B5480);height:auto;">
-      <!--Complete the About me page and description about me, use cv and LinkedIn to help for this-->
+    <div class="page-header-bar"></div>
 
-      <div class="title-txt">
-        About Me
-      </div>
+    <!-- Profile Photo -->
+    <img src="Photo/Grad_Photo.png" alt="Harvey Morris-Daws" class="profile-photo">
 
-      <div class="main-txt">
-         I am a recent graduate from the University of Derby with a bachelor's degree in Computer Games Programming.
+    <div class="title-txt">About Me</div>
+
+    <div class="main-txt">
+      I am a recent graduate from the University of Derby with a bachelor's degree in Computer Games Programming.
       <p>My main specialties include game mechanics and feature programming, UI programming in collaboration with artists to build aesthetically pleasing and fluid UI systems, build testing and debugging, and level design/greymapping.</p>
-      <p>I primarily work with Unreal Engine and Unity, with a strong preference for Unreal Engine due to its versatility and advanced tools. </p>
+      <p>I primarily work with Unreal Engine and Unity, with a strong preference for Unreal Engine due to its versatility and advanced tools.</p>
       <p>I actively seek opportunities to gain experience through game jams and engage in personal projects to stay sharp and continuously improve my coding skills.</p>
       <p>I am passionate about enhancing my abilities in game development, team communication, and problem-solving while contributing to innovative and engaging gaming experiences.</p>
-       
-      
+    </div>
 
+    <!-- CV & Contact buttons -->
+    <div class="cta-buttons">
+      <!-- TODO: Add your CV file to the CV/ folder and update this href -->
+      <a href="CV/Harvey_Morris-Daws_CV.pdf" download class="btn-primary">Download CV</a>
+      <!-- TODO: Replace with your actual email address -->
+      <a href="mailto:harveymorrisdaws@gmail.com" class="btn-secondary">Get In Touch</a>
+    </div>
+
+    <!-- ===================== Technical Skills ===================== -->
+    <div class="title-txt">Technical Skills</div>
+
+    <div class="skills-grid">
+
+      <div class="skill-category">
+        <h3>Game Engines</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Unreal Engine 5</span>
+          <span class="skill-tag">Unity</span>
+        </div>
       </div>
 
-      <div class="title-txt">
-        Technical Skills
+      <div class="skill-category">
+        <h3>Languages</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">C#</span>
+          <span class="skill-tag">C++</span>
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">HTML &amp; CSS</span>
+          <span class="skill-tag">Blueprints</span>
+        </div>
       </div>
-      
 
-      <div class="main-txt">
-        <P><b><span style="font-size: 20px;">•  Core Expertise:</span></b> UI/UX programming, gameplay mechanics, rapid prototyping, debugging, and optimization.</p>
-        <P><b><span style="font-size: 20px;">•  Game Engines:</span></b> Unreal Engine (Visual scripting with Blueprints), Unity (C# scripting).</p>
-        <P><b><span style="font-size: 20px;">•  Programming Languages:</span></b> Python, C++, C#, Unreal Engine Blueprints, HTML and CSS.</p>
-        <P><b><span style="font-size: 20px;">•  Development Tools:</span></b> GitHub Desktop (version control), Fusion 360 / SolidWorks (CAD), Davinci Resolve (video editing),Blender (3D modeling basics).</p>
+      <div class="skill-category">
+        <h3>Core Skills</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">UI / UX Programming</span>
+          <span class="skill-tag">Gameplay Mechanics</span>
+          <span class="skill-tag">Level Design</span>
+          <span class="skill-tag">Rapid Prototyping</span>
+          <span class="skill-tag">Debugging</span>
+        </div>
       </div>
 
-      <div class="title-txt">
-        Career Goals
+      <div class="skill-category">
+        <h3>Tools</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">GitHub Desktop</span>
+          <span class="skill-tag">Blender</span>
+          <span class="skill-tag">DaVinci Resolve</span>
+          <span class="skill-tag">Fusion 360</span>
+        </div>
       </div>
-      
-      <div class="main-txt">
-      I aspire to join a dynamic and exciting game development team where I can contribute my skills to help create immersive and entertaining games. 
+
+    </div>
+
+    <!-- ===================== Career Goals ===================== -->
+    <div class="title-txt">Career Goals</div>
+
+    <div class="main-txt">
+      I aspire to join a dynamic and exciting game development team where I can contribute my skills to help create immersive and entertaining games.
       <p>My goal is to continue developing my expertise as a game developer, gain new skills through collaboration with a talented team, and actively grow my network within the game industry to foster connections and learn from experienced professionals.</p>
+    </div>
+
+    <!-- ===================== Interests ===================== -->
+    <div class="title-txt">Interests</div>
+
+    <div class="main-txt">
+      Outside of programming, I enjoy playing video games, particularly competitive first-person shooters and solo survival games. When I'm not gaming, I'm often working on improving my golf skills and lowering my handicap.
+      <p>I also enjoy staying active by going to the gym and running, especially participating in parkruns and other running events. These activities not only keep me fit but also allow me to connect with different communities and meet new people who share similar interests.</p>
+      <p>In addition, I love exploring new skills on the computer, such as 3D modeling and experimenting with content creation. These pursuits help me stay creative and expand my technical abilities.</p>
+    </div>
+
+    <!-- ===================== Contact ===================== -->
+    <div class="title-txt">Contact</div>
+
+    <div class="contact-section main-txt">
+      <p>I'm open to graduate roles, internships, and freelance game development work. Feel free to reach out via email or connect on LinkedIn.</p>
+      <div class="cta-buttons">
+        <!-- TODO: Replace with your actual email address -->
+        <a href="mailto:harveymorrisdaws@gmail.com" class="btn-primary">Email Me</a>
+        <a href="https://www.linkedin.com/in/harveymorris-daws/" target="_blank" class="btn-secondary">LinkedIn</a>
       </div>
-
-      <div class="title-txt">
-        Interests
-      </div>
-
-      <div class="main-txt">
-        Outside of programming, I enjoy playing video games, particularly competitive first-person shooters and solo survival games. When I'm not gaming, I'm often working on improving my golf skills and lowering my handicap.
-        <p>I also enjoy staying active by going to the gym and running, especially participating in parkruns and other running events. These activities not only keep me fit but also allow me to connect with different communities and meet new people who share similar interests.</p>
-        <p>In addition, I love exploring new skills on the computer, such as 3D modeling and experimenting with content creation. These pursuits help me stay creative and expand my technical abilities.</p>
-      </div>
-      
-        
-
-
+    </div>
 
   </main>
+
+  <footer class="site-footer">
+    <p>
+      Harvey Morris-Daws &copy; 2025
+      &nbsp;|&nbsp;
+      <a href="https://www.linkedin.com/in/harveymorris-daws/" target="_blank">LinkedIn</a>
+      &nbsp;|&nbsp;
+      <!-- TODO: Replace HarveyMD with your actual GitHub username -->
+      <a href="https://github.com/HarveyMD" target="_blank">GitHub</a>
+    </p>
+  </footer>
+
+  <script>
+    // Highlight active nav link based on current page
+    (function() {
+      const page = window.location.pathname.split('/').pop() || 'index.html';
+      document.querySelectorAll('.navbar a').forEach(function(link) {
+        if (link.getAttribute('href') === page) {
+          link.classList.add('active');
+        }
+      });
+    })();
+  </script>
 
 </body>
 </html>

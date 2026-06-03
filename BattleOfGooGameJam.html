@@ -4,49 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Battle of Goo — a Game Maker's Toolkit Jam 2024 entry built in Unreal Engine 5.4 around the 'Built to Scale' theme, developed in four days.">
+    <meta property="og:title" content="Battle of Goo | Harvey Morris-Daws">
+    <meta property="og:description" content="A GMTK Jam 2024 entry where player size scales with health. Built in UE5.4 in four days.">
+    <meta property="og:image" content="Photo/Battle_Of_Goo.png">
+    <meta property="og:type" content="website">
+
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-    <title>Harvey Morris-Daws</title>
+    <title>Battle of Goo | Harvey Morris-Daws</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="Photo/Grad_Photo.png" type="image/x-icon">
 </head>
 <body>
 
   <header>
-
     <h1>Games Programmer</h1>
-</header>
-  
+  </header>
+
   <nav class="navbar">
     <ul>
       <li><a href="index.html">About</a></li>
       <li><a href="Projects.html">Projects</a></li>
       <li>
-        <a href="https://www.linkedin.com/in/harveymorris-daws/" target="_blank">
-          <img src="Photo/LinkedinLogo.png" alt="LinkedIn" class="nav-image" title="LinkedIn">
+        <a href="https://www.linkedin.com/in/harveymorris-daws/" target="_blank" title="LinkedIn">
+          <img src="Photo/LinkedinLogo.png" alt="LinkedIn" class="nav-image">
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/HarveyMD" target="_blank" title="GitHub">
+          <svg class="nav-icon-svg" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" aria-label="GitHub">
+            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38
+              0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01
+              1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95
+              0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68
+              0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15
+              0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013
+              8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+          </svg>
         </a>
       </li>
     </ul>
   </nav>
 
   <main>
-    <div style="padding:20px;margin-top:20px;margin:bottom 20px;background-color: linear-gradient(180deg, #233A4E, #6B5480);height:auto;"></div>
+    <div class="page-header-bar"></div>
 
-    <div class="title-txt">
-      Battle Of Goo
-    </div>
-<!--
+    <div class="title-txt">Battle Of Goo</div>
+
     <div class="main-txt">
-      This project was created for the Game Maker’s Toolkit Game Jam 2024, where our team of five (three programmers and two artists) developed a game in just four days. 
-      <p>The theme of the jam was "Built to Scale," which we interpreted by designing a game where the player's size dynamically changes based on their health levels.</p>
-      The core gameplay revolves around survival—players must eliminate enemies and collect health pickups to grow in size while avoiding damage that causes them to shrink. 
-      <p>The ultimate goal is to survive long enough to face the final boss—a larger, more powerful version of the regular enemies with increased health and damage. The game was built in Unreal Engine 5.4.</p>
-    </div>
--->
-    <div class="main-txt">
-      Created for the <b>Game Maker’s Toolkit Jam 2024</b>, our team of five (three programmers, two artists) developed this game in four days using <b>Unreal Engine 5.4.</b>
-      <p>The game was designed around the jam’s theme, <b>"Built to Scale"</b> featuring a core mechanic where the player’s size changes based on health.</p>
-      Players grow by eliminating enemies and collecting health pickups but shrink when taking damage. 
-      <p>The goal is to survive long enough to face the final boss—a larger, stronger version of the regular enemies.</p>
+      Created for the <b>Game Maker's Toolkit Jam 2024</b>, our team of five (three programmers, two artists) developed this game in four days using <b>Unreal Engine 5.4.</b>
+      <p>The game was designed around the jam's theme, <b>"Built to Scale"</b> — featuring a core mechanic where the player's size changes based on health.</p>
+      Players grow by eliminating enemies and collecting health pickups but shrink when taking damage.
+      <p>The goal is to survive long enough to face the final boss — a larger, stronger version of the regular enemies.</p>
     </div>
 
     <div class="title-txt">
@@ -60,48 +70,53 @@
       <p><b><span style="font-size: 20px;">Credits Menu</span></b> – Created a screen showcasing all contributors.</p>
     </div>
 
-
     <h1>Development Highlights</h1>
 
+    <!-- Fixed: single class="image-container", video uses only one 'controls' attribute -->
+    <div class="image-container">
 
-<!--1-->
-<div id="image-container">
+      <!-- 1 — video (fixed: was 'control autoplay muted loop controls', now clean) -->
+      <div class="container">
+        <video autoplay muted loop controls class="image" title="Game Mechanics Testing">
+          <source src="Video/BattleOfGooDevVideo.mp4" type="video/mp4">
+        </video>
+        <div class="overlay"><div class="text">Game Mechanics Testing</div></div>
+      </div>
 
-  <div class="container">
-      <video control autoplay muted loop class="image" controls title="3D Modelling">
-    <source src="Video/BattleOfGooDevVideo.mp4" alt="3D Modelling Render" class="image">
-    </video>
-    <div class="overlay">
-      <div class="text">Game Mechanics Testing</div>
-      <div class="text"></div>
+      <!-- 2 -->
+      <div class="container">
+        <img src="Photo/BattleOfGooDevelopment.png" alt="Level Design and Testing" class="image">
+        <div class="overlay"><div class="text">Level Design and Testing</div></div>
+      </div>
+
+      <!-- 3 -->
+      <div class="container">
+        <img src="Photo/BattleOfGooArt.png" alt="Team Portrait and Artwork" class="image">
+        <div class="overlay"><div class="text">Team Portrait and Artwork</div></div>
+      </div>
+
     </div>
-</div>
-<!--2-->
-<div class="container">
-  <img src="Photo/BattleOfGooDevelopment.png" alt="3D Modelling Render" class="image">
-  <div class="overlay">
-    <div class="text">Level Design and Testing</div>
-    <div class="text"></div>
-  </div>
-</div>
-
-<!--3-->
-<div class="container">
-    <img src="Photo/BattleOfGooArt.png" alt="3D Modelling Render" class="image">
-    <div class="overlay">
-      <div class="text">Team Portrait and Artwork</div>
-      <div class="text"></div>
-    </div>
-  </div>
-
-
-
-
-
-
-
 
   </main>
+
+  <footer class="site-footer">
+    <p>
+      Harvey Morris-Daws &copy; 2025
+      &nbsp;|&nbsp;
+      <a href="https://www.linkedin.com/in/harveymorris-daws/" target="_blank">LinkedIn</a>
+      &nbsp;|&nbsp;
+      <a href="https://github.com/HarveyMD" target="_blank">GitHub</a>
+    </p>
+  </footer>
+
+  <script>
+    (function() {
+      const page = window.location.pathname.split('/').pop() || 'index.html';
+      document.querySelectorAll('.navbar a').forEach(function(link) {
+        if (link.getAttribute('href') === page) link.classList.add('active');
+      });
+    })();
+  </script>
 
 </body>
 </html>
